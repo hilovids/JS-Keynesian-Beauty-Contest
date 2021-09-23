@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <p>What is your name?</p>
+          <input type="text" id="nameText">
+          <p>What is your favorite ice cream flavor?</p>
+          <input type="text" id="iceCreamText">
+          <button id="submitName" onclick="submitName()">Enter</button>
+          <p class="errorText"></p>
+        </div>
+      
+    </div>
+
+    <h1 class="Title">Keynesian Beauty Contest</h1>
+    <p>Guess a number, 0-100. The computer will do the same.</p>
+    <ul>
+        <li>
+            The winner is whoever is closer to two-thirds (2/3) the average of your two numbers.
+        </li>
+        <li>
+            If the distance is the same, it is a tie.
+        </li>
+    </ul>
+    <input id="guessInput" type="number" step="1" value="50" min="0" max="100"/>
+    <button id="guessBtn" onclick="onGuess()">Guess</button>
+    <p class="computerGuessText">Computer's Guess: ?????</p>
+    <p class="numberToReach">Number to Reach: ?????</p>
+    <div class="grid">
+        <p class="playerDistance">Your Distance: ?????</p>
+        <p class="computerDistance">Computer's Distance: ?????</p>
+    </div>
+    <p class="winnerText">Winner: </p>
+    <p class="errorText"></p>
+</div>
+</body>
+<script src = "beauty.js" id="canvasContext"></script>
+</html>
